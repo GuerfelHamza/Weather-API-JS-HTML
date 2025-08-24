@@ -1,0 +1,90 @@
+body {
+    background-image: url("../images/1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.weather .global { 
+    color: yellow; 
+    font-size: 50px;
+}
+
+.weather .international { 
+    font-size: 25px; 
+    font-weight: bold;
+}
+
+.weather .powered { 
+    font-style: italic; 
+    font-weight: bold;
+}
+
+.weather .buttum {
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #845ef7, #5c7cfa);
+    background-size: 200% 200%;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(132, 94, 247, 0.6);
+    transition: all 0.4s ease-in-out;
+    animation: gradientMove 5s infinite alternate;
+}
+
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    100% {background-position: 100% 50%;}
+}
+
+select {
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.weather-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.weather-card {
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    padding: 15px 20px;
+    width: 140px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.weather-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255,255,255,0.8);
+}
+
+.weather-card .date {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.weather-card .icon {
+    font-size: 30px;
+}
+
+.weather-card .temp {
+    margin-top: 5px;
+}

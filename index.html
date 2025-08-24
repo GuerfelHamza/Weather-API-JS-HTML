@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo 7 jours</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <div class="weather" align="center">
+        <h1 class="global">Global Meteo</h1>
+        <p class="international">International Weather Forecast</p>
+        <p class="powered">
+            Powered by  
+            <a href="https://www.7timer.info/doc.php?lang=en" target="_blank" class="buttum">7timer!</a>
+        </p>
+    </div>
+
+    <center>
+        <label for="countries"></label>
+        <select name="countries" id="countries">
+            <option value="" disabled selected>--Select a city--</option>
+            <option value="Paris">France (Paris)</option>
+            <option value="Berlin">Allemagne (Berlin)</option>
+            <option value="Rome">Italie (Rome)</option>
+            <option value="Madrid">Espagne (Madrid)</option>
+        </select>
+
+        <div id="weatherResult" class="weather-cards"></div>
+    </center>
+
+    <footer>
+        <center><p class="copyright-text">© Copyright 2025 _______</p></center>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
